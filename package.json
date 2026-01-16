@@ -1,0 +1,47 @@
+{
+  "name": "@akavium/server",
+  "description": "Akavium Backend Server - Real-time Collaboration SaaS Dashboard",
+  "main": "src/app/index.ts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node build/app/index.js",
+    "dev": "nodemon",
+    "build": "npx tsc",
+    "debug": "nodemon --exec \"node --inspect-brk=0.0.0.0:9229 -r tsx/cjs\" src/app.ts"
+  },
+  "keywords": [
+    "collaboration",
+    "saas",
+    "dashboard",
+    "realtime"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "node-schedule": "^2.1.1",
+    "postgre-pagination": "^1.0.3",
+    "postgre-records": "^1.0.4",
+    "postgre-types": "^1.0.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "tspec": "^0.1.116",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/connect": "^3.4.38",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/debug": "^4.1.12",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "@types/node-schedule": "^2.1.7",
+    "@types/serve-static": "^1.15.7",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3"
+  },
+  "author": "suhyun"
+}
